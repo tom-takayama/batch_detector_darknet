@@ -1634,7 +1634,7 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
 
 
 // -------- Vincent: adding function for multiple images procession-----------
-// vincent.gong7@gmail.com
+// https://github.com/vincentgong7/VG_AlexeyAB_darknet
 char* concat(const char *s1, const char *s2)
 {
     char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 for the null-terminator
@@ -1699,7 +1699,7 @@ void batch_detector(char *datacfg, char *cfgfile, char *weightfile, char *filena
     float nms = .45;    // 0.4F
     
     // -------- Vincent: start adding function for batch images procession-----------
-    // vincent.gong7@gmail.com
+    // https://github.com/vincentgong7/VG_AlexeyAB_darknet
     
     if(in_folder && out_folder){
     printf("folder input=%s and output=%s\n", in_folder, out_folder);
@@ -1838,7 +1838,7 @@ void batch_detector(char *datacfg, char *cfgfile, char *weightfile, char *filena
     free_network(net);
 }
 // -------- Vincent: finish function for batch images procession-----------
-// vincent.gong7@gmail.com
+// https://github.com/vincentgong7/VG_AlexeyAB_darknet
 
 
 void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
